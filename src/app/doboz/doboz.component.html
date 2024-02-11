@@ -1,0 +1,17 @@
+<div
+  class="box"
+  [ngClass]="eppenMozgatvaVan ? 'grabbed' : 'not-grabbed'"
+  [ngStyle]="{
+    'position': 'absolute',
+    'left.px': xPozicio,
+    'top.px': yPozicio,
+    'background-color': kivalasztottSzin,
+    
+  }"
+  (mousedown)="dobozDragStart()"
+  (mouseup)="dobozDragVege()"
+  (mousemove)="dobozDragFolyamatban($event)"
+
+>
+  <h1>Húzd arrébb</h1>
+</div>

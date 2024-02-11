@@ -1,0 +1,13 @@
+<div style="background-color: yellow; border: 10px solid black; height: 100vh;">
+  <h2 style="text-align: center; margin: 0; font-family: Arial, Helvetica, sans-serif;">
+    Dobozok
+  </h2>
+  <app-szinvalaszto (ujSzinKivalasztva)="szinValasztasTortent($event)"></app-szinvalaszto>
+
+  <app-doboz [xPozicio]="250" [yPozicio]="100" [kivalasztottSzin]="kivalasztottSzin"></app-doboz>
+  <app-doboz [xPozicio]="90" [yPozicio]="330" [kivalasztottSzin]="kivalasztottSzin"></app-doboz>
+  <app-doboz [xPozicio]="310" [yPozicio]="550" [kivalasztottSzin]="kivalasztottSzin"></app-doboz>
+
+</div>
+
+
